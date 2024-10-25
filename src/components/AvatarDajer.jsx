@@ -1,7 +1,8 @@
 import {Avatar} from "@nextui-org/react";
+import FotoDajer  from '../assets/imagenes/foto-dajer.jpg'
 
 export function AvatarDajer(){
     return(
-        <Avatar size="md" isBordered color="warning" src="https://i.pravatar.cc/150?u=a04258114e29026702d" />
+        <Avatar size="lg" isBordered color="warning" src={ FotoDajer } />
     )
 }
