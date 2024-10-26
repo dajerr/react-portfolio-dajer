@@ -1,5 +1,5 @@
 
-export function AsideArticles({title, text}){
+export function AsideArticles({title}){
     
 
     return(
