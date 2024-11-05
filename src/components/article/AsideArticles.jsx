@@ -3,7 +3,7 @@ export function AsideArticles({title}){
     
 
     return(
-        <article className="h-[80px] border-b-2 pt-4 last:border-none">
+        <article className="">
             <div className="flex items-center gap-2">
             <span>
                 -

@@ -1,0 +1,29 @@
+{
+    "personalInfo": {
+      "name": "Sujel Yatim Dajer Herrera",
+      "age": 20,
+      "role": "Frontend Developer",
+      "description": "Desarrollador frontend, apasionado por crear experiencias digitales modernas y eficientes. Con dominio de JavaScript, HTML, CSS y Tailwind CSS, entre otras. me destaco en el diseño de interfaces dinámicas y responsivas. Experto en React Vite y Astro, creo páginas rápidas y escalables."
+    },
+    "skills": ["JavaScript", "TailwindCSS", "HTML", "CSS", "Astro", "React Vite"],
+    "projects": [
+      {
+        "name": "Project Name",
+        "description": "Brief description of the project.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "url": "https://link-to-project.com"
+      },
+      {
+        "name": "Another Project",
+        "description": "Description of another project.",
+        "technologies": ["React Vite", "TailwindCSS"],
+        "url": "https://another-link.com"
+      }
+    ],
+    "contact": {
+      "email": "tu-email@correo.com",
+      "linkedin": "https://linkedin.com/in/tu-perfil",
+      "github": "https://github.com/tu-usuario"
+    }
+  }
+  

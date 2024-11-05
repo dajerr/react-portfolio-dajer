@@ -1,8 +1,10 @@
 import { Header } from "./components/Header"
-import { ArticleMain } from "./components/ArticleMain"
-import { AsideContainer } from "./components/AsideContainer"
+import { ArticleMain } from "./components/article/ArticleMain"
+import { AsideContainer } from "./components/article/AsideContainer"
 import { Proyectos } from "./components/Proyectos"
-import { Acerca } from "./components/Acerca"
+import { Acerca } from "./components/acerca/Acerca"
+
+
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
       </div>
 
       <Proyectos/>
+
+
       <Acerca/>
 
     </section>

@@ -1,5 +1,5 @@
 import {Card, CardHeader, CardBody, Image, Chip} from "@nextui-org/react";
-import proximamenteImg from '../assets/imagenes/proximamente-img.webp'
+import proximamenteImg from '/imagenes/proximamente-img.webp'
 
 export function CardProyectos({chipUno, title, img, altImg, chipColorUno}){
     return(

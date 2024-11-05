@@ -1,5 +1,5 @@
 
-import portfolio from '../assets/imagenes/portfolio.webp'
+import portfolio from '/imagenes/portfolio.webp'
 import { Button, Image } from "@nextui-org/react";
 
 
