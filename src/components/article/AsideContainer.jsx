@@ -1,6 +1,4 @@
-import { React } from "../svgs/React"
-import { Astro } from "../svgs/Astro"
-import { Tailwind } from '../svgs/Tailwind'
+import { Tailwind, Astro, React } from "../svgs/IconsSvg"
 import { AsideArticles } from "./AsideArticles"
 
 

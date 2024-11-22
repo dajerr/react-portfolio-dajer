@@ -11,9 +11,8 @@ export function Header(){
                     <a href="#">Dajer.dev</a>
                 </span>
                 <AvatarDajer/>
-                
+             
             </div>
-            
         </header>
     )
 }
