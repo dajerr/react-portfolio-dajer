@@ -17,7 +17,7 @@ export function Contact() {
     const handledSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await fetch("https://backend-portfolio-1.vercel.app/data", {
+            const response = await fetch("https://backend-portfolio-1.vercel.app/users", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
