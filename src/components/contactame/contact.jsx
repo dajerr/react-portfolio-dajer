@@ -3,9 +3,9 @@ import { useState} from "react";
 export function Contact() {
 
     const [data, setData] = useState({
-        nombre: '',
+        name: '',
         email: '',
-        contenido: ''
+        content: ''
     })
     
 
@@ -31,17 +31,17 @@ export function Contact() {
             console.log('Respuesta del servidor:', datos);
             alert('Formulario enviado con éxito');
             setData({
-                nombre: '',
+                name: '',
                 email: '',
-                contenido: ''
+                content: ''
             });
         } catch (error) {
             console.error(error)
             alert('Hubo un problema al enviar el formulario.');
             setData({
-                nombre: '',
+                name: '',
                 email: '',
-                contenido: ''
+                content: ''
             });
         }
     }
@@ -68,9 +68,9 @@ export function Contact() {
                     </div>
                     <div className="md:flex-1 items-center flex justify-center mb-6 ">
                         <form onSubmit={handledSubmit} className="flex flex-col gap-3 w-[260px] md:w-[340px]">
-                            <input name="nombre" onChange={handleChange} value={data.nombre} className="rounded-md px-3 py-2 bg-[#00000048] border border-yellow-500" type="text" placeholder="Nombre"  />
+                            <input name="name" onChange={handleChange} value={data.nombre} className="rounded-md px-3 py-2 bg-[#00000048] border border-yellow-500" type="text" placeholder="Nombre"  />
                             <input name="email" onChange={handleChange} value={data.email} className="rounded-md px-3 py-2 bg-[#00000048] border border-yellow-500" type="email" placeholder="Email" />
-                            <input name="contenido" onChange={handleChange} value={data.contenido} className="rounded-md px-3 py-2 bg-[#00000048] border border-yellow-500" type="text" placeholder="Contenido"/>
+                            <input name="content" onChange={handleChange} value={data.contenido} className="rounded-md px-3 py-2 bg-[#00000048] border border-yellow-500" type="text" placeholder="Contenido"/>
                             <button type="submit" className="border border-yellow-500 px-3 py-1">Enviar</button>
                         </form>
                     </div>
