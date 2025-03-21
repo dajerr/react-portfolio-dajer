@@ -4,8 +4,8 @@ const ProyectosInfo = [
         chipUno: "React",
         chipColorUno: "warning",
         title: "Página web Artista",
-        img: '/imagenes/herrerart-proyecto.webp', 
-        imgModal: '/imagenes/fullPage-herrerart.png',
+        img: '/imagenes/screen-herrerart-new.png', 
+        imgModal: '/imagenes/fullpage-herrerart-new.png',
         altImg: "Imagen de la página web herrerart",
         description: "proyecto freelance hecho con ReactJs y TailwindCSS, manejando Hooks como useState, useEffect. También manejo de información en json y partes dinámicas en la Página web",
         used: [{id: 1, usado: "React"},{id: 2, usado: "Tailwind"},{id: 3, usado: "Vite"}],
@@ -25,13 +25,15 @@ const ProyectosInfo = [
       },
       {
         id: 3,
-        chipUno: "React",
+        chipUno: "Astro",
         chipColorUno: "success",
-        title: "Mi Proyecto de React",
-        img: '',
+        title: "Mirthax creadora de Vtubers",
+        img: '/imagenes/mirthax-screen.png',
+        imgModal: "/imagenes/mirthax-screen.png",
         altImg: "Imagen de mi proyecto de React",
-        description: "",
-        link: ""
+        description: "Proyecto desarrollado con Astro y TailwindCss, enfocado en la creación de Vtubers de la creadora Mirthax. Un portafolio dirigido a clientes de habla hispana e inglesa.",
+        used: [{id: 1, usado: "Astro"},{id: 2, usado: "TailwindCSS"}],
+        link: "https://mirthax.vercel.app"
       },
 ]
 

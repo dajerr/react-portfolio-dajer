@@ -1,18 +1,29 @@
 
 import portfolio from '/imagenes/portfolio.webp'
 import { Button, Image } from "@nextui-org/react";
-
+import { motion } from "framer-motion"
 
 export function ArticleMain() {
     return (
         <section className='mb-12 max-w-[700px]'>
             <div className=''>
-                <picture className=''>
+                <picture>
+                    <motion.div 
+                        initial={{ opacity: 0, x: -150 }}    
+                        animate={{ opacity: 1, x: 0}}
+                        transition={{ease: "easeInOut", duration: 1.2}}
+                    >
                     <Image src={portfolio} isBlurred className='w-full rounded-xl' alt="imagen de graves" />
+                    </motion.div>
                 </picture>
             </div>
 
-            <div className='md:flex gap-x-6'>
+            <motion.div 
+                className='md:flex gap-x-6'
+                initial={{ opacity: 0, y: 150 }}    
+                animate={{ opacity: 1, y: 0}}
+                transition={{ease: "easeInOut", duration: 1.2}}
+            >
                 <div className='flex-1 py-6'>
                     <h2 className='text-white text-[40px] md:text-[48px] lg:text-[52px] font-bold leading-none'>Desarrollador
                         <span className='text-yellow-500'> Web <br /></span>
@@ -42,7 +53,7 @@ export function ArticleMain() {
 
                     </Button>
                 </div>
-            </div>
+            </motion.div>
 
 
 
