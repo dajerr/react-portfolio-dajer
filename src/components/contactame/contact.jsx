@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ContactPost } from "../../service/ContactPost";
+import { sendPost } from "../../service/ContactPost";
 import { toast, ToastContainer } from "react-toastify";
 import { motion } from "framer-motion";
 import "react-toastify/dist/ReactToastify.css";
@@ -21,43 +21,39 @@ export function Contact() {
         nombre: "",
         email: "",
         asunto: ""
-    });
+    })
     const [isLoading, setIsLoading] = useState(false);
     const [focusedField, setFocusedField] = useState(null);
 
-    const handleChange = (e) => {
+
+    function handleChange(e) {
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
-        });
-    };
+        })
+    }
 
-    const handledSubmit = async (e) => {
+    async function handledSubmit(e) {
         e.preventDefault();
-        if (isLoading) return;
-
         setIsLoading(true);
-        try {
-            const response = await ContactPost.postMessage(formData);
 
-            if (response.error) {
-                toast.error(response.error);
-            } else {
-                toast.success(response.mensaje || "✅ Mensaje enviado con éxito");
-                setFormData({ nombre: "", email: "", asunto: "" });
-            }
+        try {
+            await sendPost(formData)
+            toast.success("Mensaje enviado con éxito")
+            setFormData({ nombre: "", email: "", asunto: "" })
         } catch (error) {
-            toast.error("❌ Error al enviar el mensaje");
+            toast.error(error.message || "Hubo un problema")
         } finally {
-            setIsLoading(false);
+            setIsLoading(false)
         }
-    };
+    }
+
 
     return (
         <>
             <motion.section
                 whileInView={{ opacity: 1, y: 0 }}
-                initial={{ opacity: 0, y: 40}}
+                initial={{ opacity: 0, y: 40 }}
 
                 viewport={{
                     once: true,

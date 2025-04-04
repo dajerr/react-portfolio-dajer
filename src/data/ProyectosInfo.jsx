@@ -29,7 +29,7 @@ const ProyectosInfo = [
         chipColorUno: "success",
         title: "Mirthax creadora de Vtubers",
         img: '/imagenes/mirthax-screen.png',
-        imgModal: "/imagenes/mirthax-screen.png",
+        imgModal: "/imagenes/mirthax-fullpage.png",
         altImg: "Imagen de mi proyecto de React",
         description: "Proyecto desarrollado con Astro y TailwindCss, enfocado en la creación de Vtubers de la creadora Mirthax. Un portafolio dirigido a clientes de habla hispana e inglesa.",
         used: [{id: 1, usado: "Astro"},{id: 2, usado: "TailwindCSS"}],
